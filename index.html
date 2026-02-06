@@ -3,101 +3,127 @@
 <head>
     <meta charset="UTF-8" />
     <title>Checkpoint Portfolio</title>
-    <style> 
-    /* Basic styling for creativity */
-body { font-family: Arial, sans-serif; margin: 0; background-color: #f4f4f9; color: #333; } 
-    nav { background-color: #4CAF50; padding: 1em; }
-    nav ul { list-style: none; display: flex; justify-content: space-around; margin: 0; padding: 0; }
-    nav ul li a { color: white; text-decoration: none; font-weight: bold; } section { padding: 2em; } footer { background-color: #222; color: #fff; text-align: center; padding: 1em; } table { width: 60%; margin: auto; border-collapse: collapse; } table, th, td { border: 1px solid #333; padding: 8px; text-align: center; } form { max-width: 400px; margin: auto; display: flex; flex-direction: column; } form input, form textarea, form button { margin: 0.5em 0; padding: 0.5em; } 
-
-    </style>
+    <!-- Link external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Import Roboto font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="page-body">
     <!-- Navbar -->
-<header>
-    <nav>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-    </nav>
-</header>
-<!-- Home Section -->
-<section id="home">
-    <h1>Welcome to My Portfolio</h1>
-    <p>This is a checkpoint project showcasing HTML skills.</p>
-    <!-- Adding audio -->
-    <audio controls>
-    <source src="https://download.samplelib.com/mp3/sample-3s.mp3" type="audio/mpeg" />
-    Your browser does not support the audio element.
-    </audio>
-    <!-- Adding video -->
-    <video width="400" controls>
-    <source src="https://disk.sample.cat/samples/mp4/1416529-sd_640_360_30fps.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-    </video>
-</section>
-<!-- About Section -->
-<section id="about">
-    <h2>About Me</h2>
-    <br>
-    My name is Sifuna.<br>
-    I am a creative and disciplined communicator with a passion for technology
-    and design.
-    </p>
-    <ul>
-    <li>Strong writing and reporting skills</li>
-    <li>Strategic thinker</li>
-    <li>Quick learner in technical domains</li>
-    </ul>
-    <img src="https://media.istockphoto.com/id/1818616410/photo/maintenance-engineers-in-server-room.jpg?s=612x612&w=0&k=20&c=NLh8tgquQUOWiHeBDFaUf16r704emzo8nvf983SOKZY=" alt="Profile Picture" width="200" />
-</section>
-<!-- Work Section -->
-<section id="work">
-    <h2>My Work</h2>
-    <p>Here are some of the projects I’ve worked on:</p>
-    <table>
-    <tr>
-        <th>Project</th>
-        <th>Description</th>
-        <th>Year</th>
-    </tr>
-    <tr>
-        <td>Website Redesign</td>
-        <td>Modernized a corporate site with responsive design</td>
-        <td>2024</td>
-    </tr>
-    <tr>
-        <td>Mobile App</td>
-        <td>Developed a productivity app for Android</td>
-        <td>2025</td>
-    </tr>
-    </table>
-</section>
-<!-- Resume Section -->
-<section id="resume">
-    <h2>Resume</h2>
-    <p>Download my resume <a href="resume.pdf">here</a>.</p>
-</section>
-<!-- Contact Section with Form -->
-<section id="contact">
-    <h2>Contact Me</h2>
-    <!-- HTML Form -->
-    <form action="#" method="post">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required />
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required />
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" rows="4" required> </textarea>
-    <button type="submit">Send</button>
-    </form>
-</section>
-<!-- Footer -->
-<footer>
-<p>&copy; 2026 My Portfolio | Designed with creativity and care by Sifuna</p>
-</footer>
+    <header class="site-header">
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#work" class="nav-link">Work</a></li>
+                <li class="nav-item"><a href="#resume" class="nav-link">Resume</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="section home-section">
+        <h1 class="title">Welcome to My Portfolio</h1>
+        <p class="intro-text">This is a checkpoint project showcasing HTML skills.</p>
+        <audio controls>
+            <source src="https://download.samplelib.com/mp3/sample-3s.mp3" type="audio/mpeg" />
+        </audio>
+        <video width="400" controls>
+            <source src="https://disk.sample.cat/samples/mp4/1416529-sd_640_360_30fps.mp4" type="video/mp4" />
+        </video>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <h2 class="subtitle">About Me</h2>
+        <p>My name is Sifuna.<br>
+        I am a creative and disciplined communicator with a passion for technology and design.</p>
+        <ul class="skills-list">
+            <li>Strong writing and reporting skills</li>
+            <li>Strategic thinker</li>
+            <li>Quick learner in technical domains</li>
+        </ul>
+        <img src="https://media.istockphoto.com/id/1818616410/photo/maintenance-engineers-in-server-room.jpg?s=612x612&w=0&k=20&c=NLh8tgquQUOWiHeBDFaUf16r704emzo8nvf983SOKZY=" 
+             alt="Profile Picture" width="200" class="profile-pic" />
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="section work-section">
+        <h2 class="subtitle">My Work</h2>
+        <p>Here are some of the projects I’ve worked on:</p>
+        <table class="work-table">
+            <thead>
+                <tr>
+                    <th>Project</th>
+                    <th>Description</th>
+                    <th>Year</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Website Redesign</td>
+                    <td>Modernized a corporate site with responsive design</td>
+                    <td>2024</td>
+                </tr>
+                <tr>
+                    <td>Mobile App</td>
+                    <td>Developed a productivity app for Android</td>
+                    <td>2025</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- Example: simple bordered table -->
+        <table class="bordered">
+            <thead>
+                <tr>
+                    <th>Header 1</th>
+                    <th>Header 2</th>
+                    <th>Header 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Row 1, Col 1</td>
+                    <td>Row 1, Col 2</td>
+                    <td>Row 1, Col 3</td>
+                </tr>
+                <tr>
+                    <td>Row 2, Col 1</td>
+                    <td>Row 2, Col 2</td>
+                    <td>Row 2, Col 3</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="section resume-section">
+        <h2 class="subtitle">Resume</h2>
+        <p>Download my resume <a href="resume.pdf" class="resume-link">here</a>.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <h2 class="subtitle">Contact Me</h2>
+        <form action="#" method="post" class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit" class="btn">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>&copy; 2026 My Portfolio | Designed with creativity and care by Sifuna</p>
+    </footer>
 </body>
+</html>
+

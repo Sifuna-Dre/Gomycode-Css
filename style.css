@@ -1,0 +1,143 @@
+/* Global styles */
+body.page-body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #f4f4f9, #e0f7fa);
+  color: #333;
+}
+
+/* Header & Navbar */
+.site-header {
+  background-color: #4CAF50;
+  padding: 1em;
+}
+
+.navbar .nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex; /* inline navbar */
+  gap: 2rem;
+}
+
+.nav-item .nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.nav-item .nav-link:hover {
+  color: #ffeb3b;
+}
+
+/* Sections */
+.section {
+  padding: 2em;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #00796b;
+}
+
+.subtitle {
+  font-size: 1.8rem;
+  color: #4CAF50;
+}
+
+.intro-text {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* About */
+.profile-pic {
+  border-radius: 50%;
+  margin-top: 1em;
+}
+
+/* Work Table */
+.work-table {
+  width: 70%;
+  margin: 1rem auto;
+  border-collapse: collapse;
+}
+
+.work-table th,
+.work-table td {
+  border: 1px solid #333;
+  padding: 10px;
+  text-align: center;
+}
+
+.work-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.work-table tr:hover {
+  background-color: #e0f7fa;
+  transition: background-color 0.3s ease;
+}
+
+/* Utility: bordered table */
+table.bordered {
+  width: 70%;
+  margin: 1rem auto;
+  border-collapse: collapse;
+}
+table.bordered th,
+table.bordered td {
+  border: 1px solid #333;
+  padding: 10px;
+  text-align: left;
+}
+table.bordered th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+table.bordered tr:hover {
+  background-color: #e0f7fa;
+  transition: background-color 0.3s ease;
+}
+
+/* Contact Form */
+.contact-form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  font-weight: bold;
+  margin-top: 0.5em;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  margin: 0.5em 0;
+  padding: 0.5em;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #388E3C;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+}

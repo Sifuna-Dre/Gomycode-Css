@@ -1,0 +1,14 @@
+# Node modules (if any)
+node_modules/
+
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Python
+__pycache__/
+
+# Logs
+*.log
